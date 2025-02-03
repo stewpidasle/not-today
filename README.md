@@ -1,113 +1,86 @@
-# ⚡ vite-react-ts-tailwind-starter
+# Extensive React Boilerplate
 
-Starter using Vite + React + TypeScript + Tailwind with Firebase.
+[![image](https://github.com/brocoders/extensive-react-boilerplate/assets/72293912/052e74be-7de0-4a4a-92a6-e6a4b68fd4b5)](https://github.com/new?template_name=extensive-react-boilerplate&template_owner=brocoders)
 
-## Motivation
+**Belongs to the [bc boilerplates](https://bcboilerplates.com/) ecosystem**
 
-Improve building your faster **prototyping** by using Vite, TypeScript, React, TailwindCSS, Firebase.
+## Table of Contents <!-- omit in toc -->
 
-This starter uses following libraries:
+- [Extensive React Boilerplate](#extensive-react-boilerplate)
+  - [Description](#description)
+  - [Getting Started](#getting-started)
+  - [Features](#features)
+  - [Screenshots](#screenshots)
+  - [Contributors](#contributors)
+  - [Support](#support)
 
-- Vite
-- React
-  - React Router
-- TypeScript
-- Tailwind CSS
-  - daisyUI
-- Firebase(v9, modular)
-- ESLint
-- Prettier
+## Description
 
-## Set up
+ReactJS Boilerplate for a typical project.
 
-```shell
-mv .env.local.example .env.local
-yarn
-yarn dev
+[Full documentation here](/docs/README.md)
+
+Demo: <https://react-boilerplate-coral.vercel.app>
+
+Backend: <https://github.com/brocoders/nestjs-boilerplate>
+
+## Getting Started
+
+First, run the development server:
+
+```bash
+cp example.env.local .env.local
+
+npm run dev
 ```
 
-### Firebase
+## Features
 
-If you **DO NOT** use Firebase, you should do:
+- [x] Next.js
+- [x] TypeScript
+- [x] [i18n](https://react.i18next.com/) (based on https://github.com/i18next/next-13-app-dir-i18next-example)
+- [x] [Material UI](https://mui.com/). Supports dark mode.
+- [x] [React Hook Form](https://react-hook-form.com/)
+- [x] React Query
+- [x] Auth (Sign in, Sign up, Reset password, Confirm email, Refresh Token)
+- [x] User management (CRUD)
+- [x] File Upload
+- [x] E2E tests ([Playwright](https://playwright.dev/))
+- [x] ESLint
+- [x] CI (GitHub Actions)
 
-- Delete the Firebase-related code: you check Main.tsx, SignInButton.tsx, SignOutButton.tsx.
-- And then delete `src/lib/firebase.ts`
-- Run `yarn remove firebase`
-- Remove `VITE_FIREBASE_*` env values from `.env.local`
+## Screenshots
 
-If you want to use Firebase, you should do:
+<img width="1552" alt="Sign In" src="https://github.com/brocoders/extensive-react-boilerplate/assets/6001723/5d42cd15-685b-4ae7-951d-4c8ed89c5390">
 
-- copy Firebase env values from Firebase Console, and paste them to `.env.local`.
-- enable Google Auth in Firebase Console. ref: https://firebase.google.com/docs/auth/web/google-signin#before_you_begin
+<img width="1552" alt="Sign Up" src="https://github.com/brocoders/extensive-react-boilerplate/assets/6001723/aca2d405-2155-4755-8d0e-d41bdc0db852">
 
-## Vite
+<img width="1552" alt="Users list" src="https://github.com/brocoders/extensive-react-boilerplate/assets/6001723/244409c0-2235-4018-b062-44fb54ea4321">
 
-[Vite](https://github.com/vitejs/vite) is a fast frontend build tool. According to the [README](https://github.com/vitejs/vite/blob/main/README.md), it consists of two major parts:
+<img width="1552" alt="Create user" src="https://github.com/brocoders/extensive-react-boilerplate/assets/6001723/cb86a3e1-331f-4bd7-9668-3c6cf44eb372">
 
-- A dev server that serves your source files over native ES modules, with rich built-in features and astonishingly fast Hot Module Replacement (HMR).
-- A build command that bundles your code with Rollup, pre-configured to output highly optimized static assets for production.
+## Contributors
 
-## React
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Shchepotin"><img src="https://avatars.githubusercontent.com/u/6001723?v=4?s=100" width="100px;" alt="Vladyslav Shchepotin"/><br /><sub><b>Vladyslav Shchepotin</b></sub></a><br /><a href="#maintenance-Shchepotin" title="Maintenance">🚧</a> <a href="#doc-Shchepotin" title="Documentation">📖</a> <a href="#code-Shchepotin" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/ElenVlass"><img src="https://avatars.githubusercontent.com/u/72293912?v=4?s=100" width="100px;" alt="Elena Vlasenko"/><br /><sub><b>Elena Vlasenko</b></sub></a><br /><a href="#doc-ElenVlass" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/TetianaFomina"><img src="https://avatars.githubusercontent.com/u/72749258?v=4?s=100" width="100px;" alt="TetianaFomina"/><br /><sub><b>TetianaFomina</b></sub></a><br /><a href="#test-TetianaFomina" title="Tests">⚠️</a> <a href="#bug-TetianaFomina" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/LiudmylaKostenko"><img src="https://avatars.githubusercontent.com/u/55603883?v=4?s=100" width="100px;" alt="Liudmyla Kostenko"/><br /><sub><b>Liudmyla Kostenko</b></sub></a><br /><a href="#code-LiudmylaKostenko" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://brocoders.com"><img src="https://avatars.githubusercontent.com/u/226194?v=4?s=100" width="100px;" alt="Rodion"/><br /><sub><b>Rodion</b></sub></a><br /><a href="#business-sars" title="Business development">💼</a></td>
+    </tr>
+  </tbody>
+</table>
 
-[React](https://github.com/facebook/react) is a JavaScript library for building user interfaces.
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
 
-Due to its awesome renderer system, there are many [React Renderor](https://github.com/chentsulin/awesome-react-renderer). So React can be not used only Web, for example, used by [React Native](https://reactnative.dev/).
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
-Let's dive into React and Vite can use with React.
+## Support
 
-## TypeScript
-
-[TypeScript](https://github.com/microsoft/TypeScript) is a superset of JavaScript. It is just one of NPM library, but it provides an original compiler.
-
-When you use TypeScript with React, you can write JSX with TypeScript, called TSX. Then you can develop views written by  **Type-Safe** template.
-
-## Tailwind CSS
-
-[Tailwind CSS](https://tailwindcss.com/) is modern utility-first CSS framework. It provides many CSS rules, but these are purged when production builds. So developers do not worry about CSS asset size for performance optimization.
-
-In VSCode, I recommend to use [intellisense extension](https://tailwindcss.com/docs/intellisense).
-
-Frequently, React developers are worried about how to write CSS in TSX(JSX) template. You must choose from CSS Modules, [styled-components](https://styled-components.com/), [linaria](https://github.com/callstack/linaria), and so on.
-Additionally, CSS architecture is difficult about scoping, e.g. BEM, FLOCSS.
-
-When you decide to use Tailwind, you only write utility-first CSS classes, you don't have to worry about them!
-
-### daisyUI
-
-[daisyUI](https://daisyui.com/) is Tailwind CSS Components library.
-
-It prepares components CSS classes such as 'btn'. If you provide 'btn' class to `<button>` element, then there should be placed completely designed button.
-
-If you don't want to use it, just remove the package and remove config in `tailwind.config.js`.
-
-## Firebase
-
-[Firebase](https://firebase.google.com/) is a PaaS that makes us create hi-quality apps so easy and so fast.
-
-This library is not suitable for everyone, but I think it is one of the best libraries for prototyping. Therefore, I have added it to this repository.
-
-The Firebase js SDK has become very useful in version 9, with [optimizations that greatly reduce bundle size](https://firebase.google.com/docs/web/modular-upgrade).
-
-### How to Use
-
-Please look at [firebase.ts](https://github.com/TeXmeijin/vite-react-ts-tailwind-starter/blob/main/src/lib/firebase.ts).
-
-There you will find a set of utility functions to manipulate Firebase for the environment in which the Emulator is used.
-
-## Formatter and Linter
-
-Already set up [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/). You can customize the rules.
-
-NOTICE: The template does not use [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) and [prettier-eslint](https://github.com/prettier/prettier-eslint). So I recommend that running commands individually. e.g. `prettier && eslint`.
-
-Please read: https://prettier.io/docs/en/integrating-with-linters.html.
-
-# ToDo
-
-- [x] install and set up [TailwindCSS/JIT](https://github.com/tailwindlabs/tailwindcss-jit) see this [PR](https://github.com/TeXmeijin/vite-react-ts-tailwind-starter/pull/1)
-
----
-
-### Support me!
-
-<a href="https://www.buymeacoffee.com/meijin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+If you seek consulting, support, or wish to collaborate, please get in touch with us via [boilerplates@brocoders.com](boilerplates@brocoders.com) or feel free to ask us on [GitHub Discussions](https://github.com/brocoders/extensive-react-boilerplate/discussions). We are totally open to any suggestions and improvements.
